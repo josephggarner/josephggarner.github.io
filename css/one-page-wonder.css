@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
 
+html {
+  scroll-behavior: smooth;
+}
+
  body {
   font-family: 'Lato';
 }
@@ -162,4 +166,47 @@ header.masthead .bg-circle-4 {
 
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+.img-border {
+  border: 5px solid black;
+}
+
+.heightRestrict {
+  max-height: 600px;
+}
+
+.skillsSection {
+  background-color: lightblue;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.contactContainer {
+  padding-left: 20%;
+}
+
+header {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.push {
+  margin-bottom: 50px;
+}
+
+.techImage {
+  height: 50px;
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+}
+
+.techName {
+  margin: 0;
+}
+
+.skillCard {
+  background-color: white;
+  margin-bottom: 40px;
+  width: 75%;
 }
