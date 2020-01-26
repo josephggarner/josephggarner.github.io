@@ -1,0 +1,125 @@
+// Cards Carousel
+// ----------------------------------------------
+.icon-cards {
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    max-width: 50%;
+    max-height: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white;
+    perspective: 1000px;
+    transform-origin: center;
+  
+    // This is the element that rotates with the animation
+  
+    &__content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: translateZ(-30vw) rotateY(0);
+      animation: carousel 20s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  
+      &.step-animation {
+        animation: carousel 16s infinite steps(1) forwards;
+      }
+    }
+  
+    // Individual cards
+  
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 80vw;
+      height: 80vw;
+      max-width: 100%;
+      max-height: 500px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      transform-origin: center;
+  
+      &:nth-child(1) {
+        background: #ccd7c5;
+        transform: rotateY(0) translateZ(35vw);
+      }
+  
+      &:nth-child(2) {
+        background: #efd2cb;
+        transform: rotateY(90deg) translateZ(35vw);
+      }
+  
+      &:nth-child(3) {
+        background: #738290;
+        transform: rotateY(180deg) translateZ(35vw);
+      }
+      &:nth-child(4) {
+        background: #a1b5d8;
+        transform: rotateY(270deg) translateZ(35vw);
+      }
+    }
+  }
+  
+  // Carousel animation
+  
+  @keyframes carousel {
+    0%,
+    10% {
+      transform: translateZ(-35vw) rotateY(0);
+    }
+    15%,
+    35% {
+      transform: translateZ(-35vw) rotateY(-90deg);
+    }
+    40%,
+    60% {
+      transform: translateZ(-35vw) rotateY(-180deg);
+    }
+    65%,
+    85% {
+      transform: translateZ(-35vw) rotateY(-270deg);
+    }
+    90%,
+    100% {
+      transform: translateZ(-35vw) rotateY(-360deg);
+    }
+  }
+  
+  .techImage {
+    height: 150px;
+  }
+  
+  .contentContain {
+    height: 100%;
+  }
+  
+  .contentRow {
+    height: 50%;
+    align-items: center;
+  }
+  
+  .techText {
+    color: black;
+    font-size: 2em;
+  }
+  
+  @media (max-width: 600px) {
+    .techImage {
+      height: 30px;
+    }
+    
+    .icon-cards {
+      height: 80vh;
+      max-height: 80vh;
+
+      &__item {
+        height: 80vh;
+        max-height: 80vh;
+      }
+    }
+  }

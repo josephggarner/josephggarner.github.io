@@ -5,7 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+      />
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -18,14 +18,15 @@
     <link
       href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
-    />
+      />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
       rel="stylesheet"
-    />
+      />
 
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -40,8 +41,7 @@
           data-target="#navbarResponsive"
           aria-controls="navbarResponsive"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -83,7 +83,8 @@
               </div>
             </div>
             <!-- <a href="./Resume.pdf" download="JosephGarnerResume.pdf">Download Resume</a> -->
-            <button class="btn btn-light" type="submit" onclick="window.open('Resume.pdf')">View My Resume!</button>
+            <button class="btn btn-light" type="submit"
+              onclick="window.open('Resume.pdf')">View My Resume!</button>
           </div>
         </div>
         <div class="bg-circle-1 bg-circle"></div>
@@ -96,78 +97,115 @@
     <a id="skills">
       <section class="skillsSection">
         <h1 class="sectionHeader push">Skills</h1>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="container skillCard">
-                <div class="row align-items-center">
-                  <div class="col-sm-3">
-                    <img src="img/html5.svg" class="techImage">
+        <figure class="icon-cards">
+          <div class="icon-cards__content">
+            <div
+              class="icon-cards__item d-flex align-items-center
+              justify-content-center">
+              <div class="container contentContain">
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/javascript.svg" class="techImage" />
+                    <p class="techText">JavaScript</p>
                   </div>
-                  <div class="col-sm-9">
-                    <p class="techName">HTML</p>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/firebase.svg" class="techImage" />
+                    <p class="techText">Firebase</p>
+                  </div>
+                </div>
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/ionic.svg" class="techImage" />
+                    <p class="techText">Ionic</p>
+                  </div>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/angular.svg" class="techImage">
+                    <p class="techText">Angular</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/css3.svg" class="techImage">
-              <p>CSS</p>
+            <div
+              class="icon-cards__item d-flex align-items-center
+              justify-content-center">
+              <div class="container contentContain">
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/php.svg" class="techImage">
+                    <p class="techText">PHP</p>
+                  </div>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/mysql.svg" class="techImage">
+                    <p class="techText">MySQL</h4>
+                  </div>
+                </div>
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/git.svg" class="techImage">
+                    <p class="techText">Git</p>
+                  </div>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/gnubash.svg" class="techImage">
+                    <p class="techText">Bash</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/javascript.svg" class="techImage">
-              <p>JavaScript</p>
+            <div
+              class="icon-cards__item d-flex align-items-center
+              justify-content-center">
+              <div class="container contentContain">
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/java.svg" class="techImage">
+                    <p class="techText">Java</p>
+                  </div>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/python.svg" class="techImage">
+                    <p class="techText">Python</h4>
+                  </div>
+                </div>
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/c.svg" class="techImage">
+                    <p class="techText">C</p>
+                  </div>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/cplusplus.svg" class="techImage">
+                    <p class="techText">C++</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/firebase.svg" class="techImage">
-              <p>Firebase</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/ionic.svg" class="techImage">
-              <p>Ionic</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/angular.svg" class="techImage">
-              <p>Angular</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/php.svg" class="techImage">
-              <p>PHP</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/mysql.svg" class="techImage">
-              <p>MySQL</h4>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/java.svg" class="techImage">
-              <p>Java</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/git.svg" class="techImage">
-              <p>Git</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/c.svg" class="techImage">
-              <p>C</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/cplusplus.svg" class="techImage">
-              <p>C++</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/python.svg" class="techImage">
-              <p>Python</h4>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/linux.svg" class="techImage">
-              <p>Linux</p>
-            </div>
-            <div class="col-sm-3 text-center spacer">
-              <img src="img/gnubash.svg" class="techImage">
-              <p>Bash</p>
+            <div
+              class="icon-cards__item d-flex align-items-center
+              justify-content-center">
+              <div class="container contentContain">
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/html5.svg" class="techImage" />
+                    <p class="techText">HTML</p>
+                  </div>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/css3.svg" class="techImage" />
+                    <p class="techText">CSS</p>
+                  </div>
+                </div>
+                <div class="row contentRow">
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/bootstrap.svg" class="techImage" />
+                    <p class="techText">Bootstrap</p>
+                  </div>
+                  <div class="col-sm-6 text-center spacer">
+                    <img src="img/sass.svg" class="techImage" />
+                    <p class="techText">SCSS</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+
+        </figure>
       </section>
     </a>
 
@@ -182,7 +220,8 @@
           <div class="row align-items-center">
             <div class="col-lg-5 order-lg-2">
               <div class="p-5 text-center">
-                <img class="img-fluid img-border heightRestrict" src="img/Ontap.PNG" alt="" />
+                <img class="img-fluid img-border heightRestrict"
+                  src="img/Ontap.PNG" alt="" />
               </div>
             </div>
             <div class="col-lg-7 order-lg-1">
@@ -212,13 +251,13 @@
                   class="btn btn-dark"
                   value="View Code"
                   onclick="window.location.replace('https://github.com/josephggarner/OnTap');"
-                />
+                  />
                 <input
                   type="button"
                   class="btn btn-info"
                   value="View Project"
                   onclick="window.location.replace('https://ontap-254620.firebaseapp.com/');"
-                />
+                  />
               </div>
             </div>
           </div>
@@ -234,7 +273,7 @@
                   class="img-fluid img-border"
                   src="img/MovieTheaterDatabse.PNG"
                   alt=""
-                />
+                  />
               </div>
             </div>
             <div class="col-lg-7">
@@ -251,13 +290,13 @@
                   class="btn btn-dark"
                   value="View Code"
                   onclick="window.location.replace('https://github.com/josephggarner/OnTap');"
-                />
+                  />
                 <input
                   type="button"
                   class="btn btn-info"
                   value="View Project"
                   onclick="window.location.replace('https://turing.cs.olemiss.edu/~jggarner/Old/FinalProject/movies.php');"
-                />
+                  />
               </div>
             </div>
           </div>
@@ -273,7 +312,7 @@
                   class="img-fluid img-border"
                   src="img/FoodMood.PNG"
                   alt=""
-                />
+                  />
               </div>
             </div>
             <div class="col-lg-7 order-lg-1">
@@ -296,13 +335,13 @@
                   class="btn btn-dark"
                   value="View Code"
                   onclick="window.location.replace('https://github.com/josephggarner/FoodMood');"
-                />
+                  />
                 <input
                   type="button"
                   class="btn btn-info"
                   value="View Project"
                   onclick="window.location.replace('https://food-mood-c0172.firebaseapp.com/homepage.html');"
-                />
+                  />
               </div>
             </div>
           </div>
@@ -318,7 +357,7 @@
                   class="img-fluid img-border"
                   src="img/APPetite.PNG"
                   alt=""
-                />
+                  />
               </div>
             </div>
             <div class="col-lg-7">
@@ -335,13 +374,13 @@
                   class="btn btn-dark"
                   value="View Code"
                   onclick="window.location.replace('https://github.com/josephggarner/APPetite');"
-                />
+                  />
                 <input
                   type="button"
                   class="btn btn-info"
                   value="View Project"
                   onclick="window.location.replace('https://appetite-7e027.firebaseapp.com/signIn.html');"
-                />
+                  />
               </div>
             </div>
           </div>
@@ -356,7 +395,6 @@
           Page by Joseph Garner.
         </p>
       </div>
-      <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
