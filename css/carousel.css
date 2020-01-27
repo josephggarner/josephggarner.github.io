@@ -41,7 +41,7 @@
   transform: rotateY(0) translateZ(35vw);
 }
 .icon-cards__item:nth-child(2) {
-  background: #efd2cb;
+  background: #ffffff;
   transform: rotateY(90deg) translateZ(35vw);
 }
 .icon-cards__item:nth-child(3) {
